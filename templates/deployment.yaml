@@ -61,7 +61,7 @@ spec:
             {{- toYaml .Values.lifecycle | nindent 12 }}
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 5678
               protocol: TCP
           {{- with .Values.livenessProbe }}
           livenessProbe:
